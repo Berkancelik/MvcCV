@@ -18,5 +18,11 @@ namespace MvcCV.Controllers
             var experiences = db.Experiences.ToList();
             return PartialView(experiences);
         }
+
+        public PartialViewResult Educations()
+        {
+            var educations = db.Experiences.ToList();
+            return PartialView(educations);
+        }
     }
 }
