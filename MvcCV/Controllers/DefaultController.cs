@@ -36,13 +36,20 @@ namespace MvcCV.Controllers
             var hobbies = db.Hobbies.ToList();
             return PartialView(hobbies);
         }
-        
-            public PartialViewResult Certificates()
+
+        public PartialViewResult Certificates()
         {
             var certificates = db.Certificates.ToList();
             return PartialView(certificates);
         }
 
-        
+        public PartialViewResult Contact()
+        {
+            var contact = db.Contacts.ToList();
+            return PartialView(contact);
+        }
+
+
+
     }
 }
