@@ -12,5 +12,10 @@ namespace MvcCV.Controllers
             var values = db.Abouts.ToList();
             return View(values);
         }
+
+        public PartialViewResult Experience()
+        {
+            return PartialView();
+        }
     }
 }
