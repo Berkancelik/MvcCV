@@ -36,11 +36,10 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Hakkımda</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Deneyimlerim</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Eğitim Hayatım</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"></a>Yeteneklerim</li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Hobilerim</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Sertifikalarım</a></li>
-
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">İletişim</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Yeteneklerim</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Hobilerim</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#ceritifacte">Sertifikalarım</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">İletişim</a></li>
             </ul>
         </div>
     </nav>
@@ -90,21 +89,22 @@
         <hr class="m-0" />
         <!-- Interests-->
         <section class="resume-section" id="interests">
-            @*@await Html.PartialAsync("~/Views/Default/Hobbies.cshtml")*@
-
         </section>
         <hr class="m-0" />
         <!-- Awards-->
-        @*@await Html.PartialAsync("~/Views/Default/Ceritifacte.cshtml")*@
+        @*@await Html.PartialAsync("~/Views/Default/Hobbies.cshtml")*@
 
-        <section class="resume-section" id="awards">
+        <section class="resume-section" id="ceritifacte">
+            @await Html.PartialAsync("~/Views/Default/Contact.cshtml")
+
         </section>
 
         <hr class="m-0" />
         <!-- Contact-->
-        @await Html.PartialAsync("~/Views/Default/Contact.cshtml")
 
-        <section class="resume-section" id="awards">
+        <section class="resume-section" id="contact">
+            @await Html.PartialAsync("~/Views/Default/Contact.cshtml")
+
         </section>
     </div>
     <!-- Bootstrap core JS-->
