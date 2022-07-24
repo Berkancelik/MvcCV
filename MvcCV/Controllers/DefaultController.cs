@@ -1,13 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MvcCV.Models
+using MvcCV.Models.Entity;
+using System.Linq;
+
 namespace MvcCV.Controllers
 {
     public class DefaultController : Controller
     {
-        DbCvContext dbCvContext;
+        DbCvContext db = new DbCvContext();
         public IActionResult Index()
         {
-            return View();
+            var values = db.Abouts.ToList();
+            return View(values);
         }
     }
 }

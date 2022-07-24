@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace MvcCV.Models
+namespace MvcCV.Models.Entity
 {
     public partial class DbCvContext : DbContext
     {

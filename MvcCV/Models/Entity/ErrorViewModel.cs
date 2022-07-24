@@ -1,6 +1,6 @@
 using System;
 
-namespace MvcCV.Models
+namespace MvcCV.Models.Entity
 {
     public class ErrorViewModel
     {

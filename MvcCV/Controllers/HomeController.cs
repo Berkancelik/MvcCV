@@ -1,11 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MvcCV.Models;
-using System;
-using System.Collections.Generic;
+using MvcCV.Models.Entity;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MvcCV.Controllers
 {
