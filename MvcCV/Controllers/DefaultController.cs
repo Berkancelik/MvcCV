@@ -21,8 +21,14 @@ namespace MvcCV.Controllers
 
         public PartialViewResult Educations()
         {
-            var educations = db.Experiences.ToList();
+            var educations = db.Educations.ToList();
             return PartialView(educations);
+        }
+
+        public PartialViewResult Skills()
+        {
+            var skills = db.Skills.ToList();
+            return PartialView(skills);
         }
     }
 }
