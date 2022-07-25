@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
+using MvcCV.EntiyLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +9,38 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class HobbyManager
+    public class HobbyManager : IHobbyService
     {
+        IHobbyDal _hobbyDal;
+
+        public HobbyManager(IHobbyDal hobbyDal)
+        {
+            _hobbyDal = hobbyDal;
+        }
+
+        public List<Hobby> GetList()
+        {
+            return _hobbyDal.GetListAll();
+        }
+
+        public void TAdd(Hobby t)
+        {
+            _hobbyDal.Insert(t);
+        }
+
+        public void TDelete(Hobby t)
+        {
+            _hobbyDal.Delete(t);
+        }
+
+        public Hobby TGetById(int id)
+        {
+            return _hobbyDal.GetByID(id);
+        }
+
+        public void TUpdate(Hobby t)
+        {
+            _hobbyDal.Update(t);
+        }
     }
 }
