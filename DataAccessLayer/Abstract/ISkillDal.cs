@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvcCV.EntiyLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface ISkillDal
+    public interface ISkillDal:IGenericDal<Skill>
     {
     }
 }
