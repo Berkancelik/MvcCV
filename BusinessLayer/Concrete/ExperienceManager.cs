@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    internal class ExperienceManager
+    public class ExperienceManager
     {
     }
 }

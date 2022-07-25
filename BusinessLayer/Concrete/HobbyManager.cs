@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    internal class HobbyManager
+    public class HobbyManager
     {
     }
 }
