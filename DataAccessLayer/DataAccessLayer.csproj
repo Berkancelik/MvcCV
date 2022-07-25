@@ -6,7 +6,10 @@
 
   <ItemGroup>
     <Folder Include="Concrete\" />
-    <Folder Include="EntityFramework\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
   </ItemGroup>
 
 </Project>
