@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    internal interface ISkillDal
+    public interface ISkillDal
     {
     }
 }

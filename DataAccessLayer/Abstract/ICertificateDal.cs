@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    internal interface ICertificateDal
+    public interface ICertificateDal
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    internal interface IAdminDal
+    public interface IAdminDal
     {
     }
 }
