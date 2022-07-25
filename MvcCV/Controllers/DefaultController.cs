@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MvcCV.Models.Entity;
+using MvcCV.DataAccessLayer.Concrete;
 using System.Linq;
 
 namespace MvcCV.Controllers

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 #nullable disable
 
 namespace MvcCV.EntiyLayer.Concrete
+{
     public partial class Contact
     {
         public int Id { get; set; }

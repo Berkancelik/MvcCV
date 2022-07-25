@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MvcCV.Models;
-using MvcCV.Models.Entity;
 using System.Diagnostics;
 
 namespace MvcCV.Controllers
