@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    internal class EfSkillRepository
+    public class EfSkillRepository
     {
     }
 }
