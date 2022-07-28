@@ -41,5 +41,16 @@ namespace MvcCV.Controllers
             Experience t = repo.Find(x => x.Id == id);
             return View(id);
         }
+
+        [HttpPost]
+        public ActionResult GetExperience(Experience p)
+        {
+            Experience t = repo.Find(x => x.Id == p.Id);
+            t.Title = p.Title;
+            t.SubTtitle = p.SubTtitle;
+            t.Description = p.Description;
+            repo.TUpdate(t);
+            return RedirectToAction("Index");
+        }
     }
 }
