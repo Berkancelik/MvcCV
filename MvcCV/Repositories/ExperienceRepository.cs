@@ -2,7 +2,7 @@
 
 namespace MvcCV.Repositories
 {
-    public class AboutRepository:GenericRepository<About>
+    public class ExperienceRepository: GenericRepository<Experience>
     {
     }
 }

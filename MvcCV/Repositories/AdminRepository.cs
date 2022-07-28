@@ -1,6 +1,8 @@
-﻿namespace MvcCV.Repositories
+﻿using MvcCV.EntiyLayer.Concrete;
+
+namespace MvcCV.Repositories
 {
-    public class AdminRepository
+    public class AdminRepository: GenericRepository<Admin>
     {
     }
 }

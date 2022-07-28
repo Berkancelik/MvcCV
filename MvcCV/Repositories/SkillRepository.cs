@@ -1,6 +1,8 @@
-﻿namespace MvcCV.Repositories
+﻿using MvcCV.EntiyLayer.Concrete;
+
+namespace MvcCV.Repositories
 {
-    public class SkillRepository
+    public class SkillRepository: GenericRepository<Skill>
     {
     }
 }
