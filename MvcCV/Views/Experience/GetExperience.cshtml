@@ -1,21 +1,28 @@
-﻿
+﻿@model MvcCV.EntiyLayer.Concrete.Experience
+
 @{
     ViewData["Title"] = "GetExperience";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 <h4>Deneyim Güncelleme Sayfası</h4>
 
-<form class="form-group" method="post">
-    <input type="text" name="Id" class="form-control" placeholder="Id" />
-        <br />
-    <input type="text" name="Title" class="form-control" placeholder="Başlığı yazınız" />
-        <br />
-    <input type="text" name="SubTitle" class="form-control" placeholder="Altbaşlığı yazınız" />
-        <br />
-    <input type="text" name="Date" class="form-control" placeholder="Tarih (Mayıs 2019 - Haziran 2022)" />
+<form>
+    @Html.Label("Deneyim Id")
+    @Html.TextBoxFor(x=>x.Id,new{@class="form-control"})
     <br />
-    <textarea placeholder="Açıklamanızı Giriniz" name="Description" class="form-control"></textarea>
+    @Html.Label("Başlık")
+    @Html.TextBoxFor(x=>x.Title,new{@class="form-control"})
     <br />
+    @Html.Label("Alt Başlık")
+    @Html.TextBoxFor(x=>x.SubTtitle,new{@class="form-control"})
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x=>x.Date,new{@class="form-control"})
+    <br />
+    @Html.Label("Açıklama")
+    @Html.TextAreaFor(x=>x.Date,new{@class="form-control"})
+    <br />
+
     <button class="btn btn-info">Güncelle</button>
 
 </form>
