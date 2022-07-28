@@ -1,6 +1,8 @@
 ﻿using MvcCV.DataAccessLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace MvcCV.Repositories
 {
@@ -32,6 +34,11 @@ namespace MvcCV.Repositories
         public T TGet(int id)
         {
             return db.Set<T>().Find(id);
+        }
+
+        public T Find(Expression<Func<T,bool>> where)
+        {
+            return db.Set<T>().FirstOrDefault(where);
         }
 
 
