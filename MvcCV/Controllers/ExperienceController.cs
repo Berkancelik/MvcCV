@@ -33,5 +33,13 @@ namespace MvcCV.Controllers
             repo.TDelete(t);
             return RedirectToAction("Index");
         }
+
+
+        [HttpGet]
+        public ActionResult GetExperience(int id)
+        {
+            Experience t = repo.Find(x => x.Id == id);
+            return View(id);
+        }
     }
 }
