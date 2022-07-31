@@ -6,5 +6,6 @@ namespace MvcCV.EntiyLayer.Concrete
     {
         public int Id { get; set; }
         public string Skills { get; set; }
+        public decimal Rate { get; set; }
     }
 }
