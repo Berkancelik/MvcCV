@@ -9,6 +9,7 @@ namespace DataAccessLayer.Repository
 {
     public class GenericRepository<T> : IGenericDal<T> where T : class
     {
+        public object List { get; set; }
 
         public void Delete(T t)
         {
