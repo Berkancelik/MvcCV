@@ -37,7 +37,8 @@
                                             <th>Yetenek</th>
                                             <th>Derece</th>
                                             <th style="width: 250px">Oran</th>
-                                            <th>İşlemler</th>
+                                            <th>Düzenle</th>
+                                            <th>Sil</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -73,7 +74,6 @@
 
 
 
-                                                <td>1.</td>
                                                 <td>@item.Id</td>
                                                 <td>@item.Skills</td>
                                                 <td>
@@ -82,9 +82,21 @@
                                                     </div>
                                                 </td>
                                                 <td><span class="@labelColor">@item.Rate%</span></td>
+
                                                 <td>
-                                                    <a href="#" class="btn-btn-danger">Sil</a>
-                                                    <a href="#" class="btn-btn-warning">Güncelle</a>
+                                                    <a class="btn btn-info btn-sm" href="#">
+                                                        <i class="fas fa-pencil-alt">
+                                                        </i>
+                                                        Düzenle
+                                                    </a>
+                                                   
+                                                </td>
+                                                <td>
+                                                     <a class="btn btn-danger btn-sm" href="#">
+                                                        <i class="fas fa-trash">
+                                                        </i>
+                                                        Sil
+                                                    </a>
                                                 </td>
                                             </tr>
                                         }
