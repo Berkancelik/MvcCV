@@ -19,7 +19,7 @@ namespace MvcCV.Controllers
             return View();
         }
 
-        [HttpGet]
+        [HttpPost]
         public ActionResult AddExperience(Experience p)
         {
             repo.TAdd(p);

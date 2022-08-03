@@ -1,22 +1,21 @@
-﻿using DataAccessLayer.Repository;
-using Microsoft.AspNetCore.Mvc;
-using MvcCV.DataAccessLayer.Concrete;
+﻿using Microsoft.AspNetCore.Mvc;
 using MvcCV.EntiyLayer.Concrete;
-using System.Linq;
+using MvcCV.Repositories;
 
 namespace MvcCV.Controllers
 {
     public class SkillController : Controller
     {
 
-        GenericRepository<Skill> repo = new GenericRepository<Skill>();
+        SkillRepository repo = new SkillRepository();
 
         public IActionResult Index()
         {
-            var skills = repo.GetListAll();
+            var skills = repo.List();
             return View(skills);
         }
 
+        [HttpGet]
         public IActionResult SkillAdd()
         {
             return View();
@@ -25,7 +24,7 @@ namespace MvcCV.Controllers
         [HttpPost]
         public IActionResult SkillAdd(Skill p)
         {
-            repo.Insert(p);
+            repo.TAdd(p);
             return RedirectToAction("Index");
         }
 
@@ -33,8 +32,8 @@ namespace MvcCV.Controllers
         [HttpPost]
         public IActionResult SkillDelete(int id)
         {
-            var skill = repo.GetListAll(x => x.Id == id);
-            repo.Delete(skill);
+            var skill = repo.Find(x => x.Id == id);
+            repo.TDelete(skill);
             return RedirectToAction("Index");
         }
     }
