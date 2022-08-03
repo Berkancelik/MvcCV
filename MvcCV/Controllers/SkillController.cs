@@ -36,6 +36,24 @@ namespace MvcCV.Controllers
             repo.TDelete(skill);
             return RedirectToAction("Index");
         }
+
+
+        [HttpGet]
+        public IActionResult SkillEdit(int id)
+        {
+            var skill = repo.Find(x => x.Id == id);
+            return View(skill);
+        }
+
+        [HttpPost]
+        public IActionResult SkillEdit(Skill t)
+        {
+            var y = repo.Find(x => x.Id == t.Id);
+            y.Skills = t.Skills;
+            y.Rate = t.Rate;
+            repo.TUpdate(y);
+            return RedirectToAction("Index");
+        }
     }
 
 }

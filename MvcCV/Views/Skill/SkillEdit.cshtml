@@ -1,0 +1,22 @@
+﻿@model Skill
+
+@{
+    ViewData["Title"] = "SkillEdit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h4> Yetenek Düzenleme Sayfası</h4>
+<br />
+<form method="post">
+  
+    @Html.Label("Yetenek")
+    @Html.TextBoxFor(x=>x.Skills,new{@class="form-control"})
+    <br />
+    @Html.Label("Oran")
+    @Html.TextBoxFor(x=>x.Rate,new{@class="form-control"})
+    <br />
+
+
+    <button class="btn btn-success">Güncelle</button>
+
+</form>
