@@ -37,7 +37,6 @@ namespace MvcCV.Controllers
             return RedirectToAction("Index");
         }
 
-
         [HttpGet]
         public IActionResult SkillEdit(int id)
         {
