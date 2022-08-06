@@ -10,6 +10,7 @@
 
     @Html.Label("Başlık")
     @Html.TextBoxFor(x=>x.Title,new{@class="form-control"})
+    @*@Html.ValidationMessageFor(x=>x.Title,"", new {@style = "color:red"})*@
     <br />
     @Html.Label("Alt Başlık 1  ")
     @Html.TextBoxFor(x=>x.SubTitle1,new{@class="form-control"})

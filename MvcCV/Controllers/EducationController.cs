@@ -22,8 +22,12 @@ namespace MvcCV.Controllers
         [HttpPost]
         public IActionResult EducationAdd(Education p)
         {
+            
+
             repo.TAdd(p);
             return RedirectToAction("Index");
+
         }
+
     }
 }
