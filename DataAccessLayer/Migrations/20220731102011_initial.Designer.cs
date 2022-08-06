@@ -138,7 +138,7 @@ namespace DataAccessLayer.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("Subtitle1")
+                    b.Property<string>("SubTitle1")
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 

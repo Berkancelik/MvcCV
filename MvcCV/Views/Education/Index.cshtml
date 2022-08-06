@@ -1,0 +1,35 @@
+﻿@using MvcCV.EntiyLayer.Concrete
+@model List<Education>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Deneyim Listes</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>SubTitle</th>
+        <th>Date</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Title</td>
+            <td>@item.SubTitle1</td>
+            <td>@item.SubTitle2</td>
+            <td>@item.GradeAverage</td>
+            <td>
+                <a href="/Education/DeleteEducation/@item.Id" class="btn btn-danger">Sil</a>
+            </td>
+            <td> <a href="/Education/EditEducation/@item.Id" class="btn btn-warning">Düzenle</a></td>
+        </tr>
+
+    }
+</table>
+<a href="/Education/EducationAdd/" class="btn btn-primary">Yeni Eğitim Bilgisi Ekle</a>

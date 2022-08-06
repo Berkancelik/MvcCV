@@ -1,0 +1,28 @@
+﻿@model Education
+@{
+    ViewData["Title"] = "EducationAdd";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Yeni Eğitim Ekleme</h1>
+<br />
+<form method="post">
+
+    @Html.Label("Başlık")
+    @Html.TextBoxFor(x=>x.Title,new{@class="form-control"})
+    <br />
+    @Html.Label("Alt Başlık 1  ")
+    @Html.TextBoxFor(x=>x.SubTitle1,new{@class="form-control"})
+    <br />
+    @Html.Label("Alt Başlık 2")
+    @Html.TextBoxFor(x=>x.SubTitle2,new{@class="form-control"})
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x=>x.GradeAverage,new{@class="form-control"})
+    <br />  
+  
+
+    <button class="btn btn-info">Kaydet</button>
+
+</form>
+

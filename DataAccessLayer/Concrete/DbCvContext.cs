@@ -86,7 +86,7 @@ namespace MvcCV.DataAccessLayer.Concrete
 
                 entity.Property(e => e.SubTitle2).HasMaxLength(50);
 
-                entity.Property(e => e.Subtitle1).HasMaxLength(50);
+                entity.Property(e => e.SubTitle1).HasMaxLength(50);
 
                 entity.Property(e => e.Title).HasMaxLength(50);
             });
